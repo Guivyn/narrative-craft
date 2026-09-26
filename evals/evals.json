@@ -1,0 +1,117 @@
+{
+  "skill_name": "narrative-craft",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我想从零开始写一个职场短篇，主角是一个被边缘化的实习生，但我不想写成鸡汤逆袭文。",
+      "expected_output": "先进行创作取向校准，询问文风气质、避雷套路和读后余味，再进入前提与雪花法的早期步骤。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "第0步", "description": "应先进入创作取向校准" },
+        { "type": "contains", "target": "output", "path": "", "expected": "文风", "description": "应主动询问文风或气质" },
+        { "type": "contains", "target": "output", "path": "", "expected": "俗套", "description": "应主动询问或识别想避开的俗套" }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "帮我写一个悬疑故事。退休刑警查20年前悬案。我不想走普通三幕式。",
+      "expected_output": "识别用户不想使用标准三幕式，提供替代结构方案，而不是强行套入固定模板。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "结构方案", "description": "应进入结构方案选择" },
+        { "type": "contains", "target": "output", "path": "", "expected": "倒叙", "description": "应能提供倒叙等替代结构" },
+        { "type": "contains", "target": "output", "path": "", "expected": "为什么适合这个故事", "description": "应说明结构选择理由" }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "我已经有一个小说片段：雨夜里，女主在便利店把前男友认成了死人。你别让我填一堆人物资料表，直接帮我把它做成更高级的故事。",
+      "expected_output": "应支持从片段反推，不强迫线性流程，不要求低价值人物档案；默认给轻量人物卡，并补主题、关系张力和叙述声音。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "片段", "description": "应基于现有片段推进" },
+        { "type": "contains", "target": "output", "path": "", "expected": "叙述", "description": "应补叙述声音或叙述设置" },
+        { "type": "contains", "target": "output", "path": "", "expected": "关系", "description": "应补关系张力或秘密" },
+        { "type": "not_contains", "target": "output", "path": "", "expected": "生理", "description": "默认不应强塞 Egri 三维问卷" }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "直接给我写，不要一步一步问。题材是校园悬疑，风格冷一点，先给我一个开头。",
+      "expected_output": "应使用极简前置判断后直接进入样章，而不是直接吐全文或卡在漫长问答里。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "样章", "description": "应先给样章方案或样章" },
+        { "type": "contains", "target": "output", "path": "", "expected": "叙述距离", "description": "应体现叙述声音设置" },
+        { "type": "contains", "target": "output", "path": "", "expected": "冷", "description": "应响应用户指定的气质" }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "我想写一个仙侠复仇故事，但最怕写成模板文。你要主动帮我拆掉套路。",
+      "expected_output": "应触发反俗套检查，明确常见写法、当前风险和偏离策略。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "反俗套", "description": "应包含反俗套检查" },
+        { "type": "contains", "target": "output", "path": "", "expected": "当前风险", "description": "应指出当前方案风险" },
+        { "type": "contains", "target": "output", "path": "", "expected": "偏离策略", "description": "应给出偏离模板文的具体方法" }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "帮我从零把'一个失眠的守夜人发现城市每晚少一盏灯'这个点子写成一篇两千字的短篇。",
+      "expected_output": "应能产出可争辩的前提、一句话概括、结构方案与一页大纲，形成完整从零路径。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "前提", "description": "应先确立可争辩的前提" },
+        { "type": "contains", "target": "output", "path": "", "expected": "一句话", "description": "应给一句话概括" },
+        { "type": "contains", "target": "output", "path": "", "expected": "结构", "description": "应给结构方案" },
+        { "type": "contains", "target": "output", "path": "", "expected": "一页大纲", "description": "应展开一页大纲" }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "这是我写好的三章草稿，读起来中段很平、人物没劲，你帮我看看结构哪里出了问题。",
+      "expected_output": "应走'已有草稿修结构'入口，使用症状→成因→修法诊断表定位中段塌陷，并输出分级问题清单。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "中段", "description": "应识别中段塌陷" },
+        { "type": "contains", "target": "output", "path": "", "expected": "结构级", "description": "问题清单应带分级" },
+        { "type": "contains", "target": "output", "path": "", "expected": "修复顺序", "description": "应给出先结构后语言的修复顺序" }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "我的反派感觉就是个工具人，主角打他就赢了，没什么威胁。",
+      "expected_output": "应读人物工坊，指出对手应是自己故事里的英雄、在某个点上是对的，并给出对抗网络与反派层级建议。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "对手", "description": "应聚焦对手设计" },
+        { "type": "contains", "target": "output", "path": "", "expected": "合理", "description": "应强调对手立场合理" },
+        { "type": "contains", "target": "output", "path": "", "expected": "层级", "description": "应给出反派层级或对抗网络" }
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "这段是我写的一段，读起来全是解释和背景交代，你帮我改成用场景展示。",
+      "expected_output": "应读场景构建，用'说明在戏剧压力下传递'与'泳池里的教皇'原则重构，而不是简单润色。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "场景", "description": "应按场景重构" },
+        { "type": "contains", "target": "output", "path": "", "expected": "压力", "description": "应把说明放进戏剧压力下传递" },
+        { "type": "contains", "target": "output", "path": "", "expected": "因此", "description": "应检查场景因果连接" }
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "帮我把这段话去一下AI味：夜色仿佛温柔地笼罩着城市，她不禁深吸一口气，眼中闪过一丝坚定的光芒，心中涌起一股说不清的感觉。",
+      "expected_output": "应执行去 AI 味三遍法，按禁用词表替换，并用具体动作/细节替代心理直述。",
+      "files": [],
+      "assertions": [
+        { "type": "contains", "target": "output", "path": "", "expected": "仿佛", "description": "应识别禁用词'仿佛'" },
+        { "type": "contains", "target": "output", "path": "", "expected": "深吸", "description": "应识别禁用词'深吸一口气'" },
+        { "type": "contains", "target": "output", "path": "", "expected": "动作", "description": "应用动作/细节替代心理直述" }
+      ]
+    }
+  ]
+}
