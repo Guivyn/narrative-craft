@@ -1,80 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" role="img" aria-labelledby="nc-flow-title nc-flow-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" role="img" aria-labelledby="nc-flow-title nc-flow-desc">
   <title id="nc-flow-title">叙事工坊工作流 0–10 步</title>
   <desc id="nc-flow-desc">横向流程轴展示 0 到 10 步：取向校准、前提、一句话、结构、人物、关系、大纲、场景、反俗套、声音、修订。实心朱砂节点为必做步骤，空心靛青节点为扩展步骤。下方标注每步只交付一个最小交付物，以及 references 按症状加载、修订按阻断级到风格级排序。</desc>
 
-  <rect x="0.5" y="0.5" width="1199" height="299" rx="18" fill="#FAF7F1" stroke="#E8E0D2"/>
-  <path d="M120 18V282M300 18V282M480 18V282M660 18V282M840 18V282M1020 18V282" stroke="#F0E9DD" stroke-width="1"/>
+  <defs>
+    <linearGradient id="nc-paper2" x1="0" y1="0" x2="0.45" y2="1">
+      <stop offset="0" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#F1E8D8"/>
+    </linearGradient>
+    <filter id="nc-node" x="-70%" y="-70%" width="240%" height="240%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#6B543C" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="20" fill="url(#nc-paper2)" stroke="#E6DCCB"/>
+
+  <!-- 深度层 -->
+  <g opacity="0.05" stroke="#C0452B" stroke-width="3" stroke-linecap="round" fill="none" transform="translate(600,170)">
+    <path transform="rotate(0)" d="M0 0V-250M0 -130L44 -174M0 -130L-44 -174M0 -198L35 -234M0 -198L-35 -234"/>
+    <path transform="rotate(60)" d="M0 0V-250M0 -130L44 -174M0 -130L-44 -174M0 -198L35 -234M0 -198L-35 -234"/>
+    <path transform="rotate(120)" d="M0 0V-250M0 -130L44 -174M0 -130L-44 -174M0 -198L35 -234M0 -198L-35 -234"/>
+    <path transform="rotate(180)" d="M0 0V-250M0 -130L44 -174M0 -130L-44 -174M0 -198L35 -234M0 -198L-35 -234"/>
+    <path transform="rotate(240)" d="M0 0V-250M0 -130L44 -174M0 -130L-44 -174M0 -198L35 -234M0 -198L-35 -234"/>
+    <path transform="rotate(300)" d="M0 0V-250M0 -130L44 -174M0 -130L-44 -174M0 -198L35 -234M0 -198L-35 -234"/>
+  </g>
+  <circle cx="1190" cy="0" r="150" fill="none" stroke="#C0452B" stroke-width="2" opacity="0.26"/>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif">
 
-    <text x="64" y="64" font-size="24" fill="#1C2430">工作流 · 0–10 步</text>
+    <rect x="64" y="42" width="6" height="34" fill="#C0452B"/>
+    <text x="82" y="70" font-size="30" font-weight="800" fill="#141C26">工作流<tspan fill="#C0452B"> · 0–10 步</tspan></text>
 
-    <circle cx="948" cy="56" r="7" fill="#C0452B"/>
-    <text x="964" y="63" font-size="18" fill="#6B7785">必做</text>
-    <circle cx="1052" cy="56" r="7" fill="#FFFFFF" stroke="#2F6E8F" stroke-width="2"/>
-    <text x="1068" y="63" font-size="18" fill="#6B7785">扩展</text>
+    <rect x="930" y="42" width="92" height="32" rx="16" fill="#FFFFFF" stroke="#E3DACB"/>
+    <circle cx="952" cy="58" r="7" fill="#C0452B"/>
+    <text x="970" y="64" font-size="18" fill="#5C6875">必做</text>
+    <rect x="1032" y="42" width="92" height="32" rx="16" fill="#FFFFFF" stroke="#E3DACB"/>
+    <circle cx="1054" cy="58" r="7" fill="#FFFFFF" stroke="#2F6E8F" stroke-width="2"/>
+    <text x="1072" y="64" font-size="18" fill="#5C6875">扩展</text>
 
-    <path d="M90 150H1130" stroke="#E3DACB" stroke-width="2"/>
+    <path d="M90 165H1130" stroke="#E3DACB" stroke-width="3"/>
+    <path d="M137 159L148 165L137 171zM241 159L252 165L241 171zM345 159L356 165L345 171zM449 159L460 165L449 171zM553 159L564 165L553 171zM657 159L668 165L657 171zM761 159L772 165L761 171zM865 159L876 165L865 171zM969 159L980 165L969 171zM1073 159L1084 165L1073 171z" fill="#D8C9B0"/>
 
-    <!-- 0 扩展 -->
-    <circle cx="90" cy="150" r="14" fill="#FFFFFF" stroke="#2F6E8F" stroke-width="2"/>
-    <text x="90" y="156" font-size="16" text-anchor="middle" fill="#2F6E8F">0</text>
-    <text x="90" y="196" font-size="20" text-anchor="middle" fill="#7C8794">取向</text>
+    <circle cx="90" cy="165" r="16" fill="#FFFFFF" stroke="#2F6E8F" stroke-width="2"/>
+    <text x="90" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#2F6E8F">0</text>
+    <text x="90" y="215" font-size="20" text-anchor="middle" fill="#7C8794">取向</text>
 
-    <!-- 1 必做 -->
-    <circle cx="194" cy="150" r="14" fill="#C0452B"/>
-    <text x="194" y="156" font-size="16" text-anchor="middle" fill="#FFFFFF">1</text>
-    <text x="194" y="196" font-size="20" text-anchor="middle" fill="#26313D">前提</text>
+    <circle cx="194" cy="165" r="16" fill="#C0452B" filter="url(#nc-node)"/>
+    <text x="194" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">1</text>
+    <text x="194" y="215" font-size="20" text-anchor="middle" fill="#26313D">前提</text>
 
-    <!-- 2 必做 -->
-    <circle cx="298" cy="150" r="14" fill="#C0452B"/>
-    <text x="298" y="156" font-size="16" text-anchor="middle" fill="#FFFFFF">2</text>
-    <text x="298" y="196" font-size="20" text-anchor="middle" fill="#26313D">一句话</text>
+    <circle cx="298" cy="165" r="16" fill="#C0452B" filter="url(#nc-node)"/>
+    <text x="298" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">2</text>
+    <text x="298" y="215" font-size="20" text-anchor="middle" fill="#26313D">一句话</text>
 
-    <!-- 3 必做 -->
-    <circle cx="402" cy="150" r="14" fill="#C0452B"/>
-    <text x="402" y="156" font-size="16" text-anchor="middle" fill="#FFFFFF">3</text>
-    <text x="402" y="196" font-size="20" text-anchor="middle" fill="#26313D">结构</text>
+    <circle cx="402" cy="165" r="16" fill="#C0452B" filter="url(#nc-node)"/>
+    <text x="402" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">3</text>
+    <text x="402" y="215" font-size="20" text-anchor="middle" fill="#26313D">结构</text>
 
-    <!-- 4 必做 -->
-    <circle cx="506" cy="150" r="14" fill="#C0452B"/>
-    <text x="506" y="156" font-size="16" text-anchor="middle" fill="#FFFFFF">4</text>
-    <text x="506" y="196" font-size="20" text-anchor="middle" fill="#26313D">人物</text>
+    <circle cx="506" cy="165" r="16" fill="#C0452B" filter="url(#nc-node)"/>
+    <text x="506" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">4</text>
+    <text x="506" y="215" font-size="20" text-anchor="middle" fill="#26313D">人物</text>
 
-    <!-- 5 扩展 -->
-    <circle cx="610" cy="150" r="14" fill="#FFFFFF" stroke="#2F6E8F" stroke-width="2"/>
-    <text x="610" y="156" font-size="16" text-anchor="middle" fill="#2F6E8F">5</text>
-    <text x="610" y="196" font-size="20" text-anchor="middle" fill="#7C8794">关系</text>
+    <circle cx="610" cy="165" r="16" fill="#FFFFFF" stroke="#2F6E8F" stroke-width="2"/>
+    <text x="610" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#2F6E8F">5</text>
+    <text x="610" y="215" font-size="20" text-anchor="middle" fill="#7C8794">关系</text>
 
-    <!-- 6 必做 -->
-    <circle cx="714" cy="150" r="14" fill="#C0452B"/>
-    <text x="714" y="156" font-size="16" text-anchor="middle" fill="#FFFFFF">6</text>
-    <text x="714" y="196" font-size="20" text-anchor="middle" fill="#26313D">大纲</text>
+    <circle cx="714" cy="165" r="16" fill="#C0452B" filter="url(#nc-node)"/>
+    <text x="714" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">6</text>
+    <text x="714" y="215" font-size="20" text-anchor="middle" fill="#26313D">大纲</text>
 
-    <!-- 7 必做 -->
-    <circle cx="818" cy="150" r="14" fill="#C0452B"/>
-    <text x="818" y="156" font-size="16" text-anchor="middle" fill="#FFFFFF">7</text>
-    <text x="818" y="196" font-size="20" text-anchor="middle" fill="#26313D">场景</text>
+    <circle cx="818" cy="165" r="16" fill="#C0452B" filter="url(#nc-node)"/>
+    <text x="818" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">7</text>
+    <text x="818" y="215" font-size="20" text-anchor="middle" fill="#26313D">场景</text>
 
-    <!-- 8 扩展 -->
-    <circle cx="922" cy="150" r="14" fill="#FFFFFF" stroke="#2F6E8F" stroke-width="2"/>
-    <text x="922" y="156" font-size="16" text-anchor="middle" fill="#2F6E8F">8</text>
-    <text x="922" y="196" font-size="20" text-anchor="middle" fill="#7C8794">反俗套</text>
+    <circle cx="922" cy="165" r="16" fill="#FFFFFF" stroke="#2F6E8F" stroke-width="2"/>
+    <text x="922" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#2F6E8F">8</text>
+    <text x="922" y="215" font-size="20" text-anchor="middle" fill="#7C8794">反俗套</text>
 
-    <!-- 9 必做 -->
-    <circle cx="1026" cy="150" r="14" fill="#C0452B"/>
-    <text x="1026" y="156" font-size="16" text-anchor="middle" fill="#FFFFFF">9</text>
-    <text x="1026" y="196" font-size="20" text-anchor="middle" fill="#26313D">声音</text>
+    <circle cx="1026" cy="165" r="16" fill="#C0452B" filter="url(#nc-node)"/>
+    <text x="1026" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">9</text>
+    <text x="1026" y="215" font-size="20" text-anchor="middle" fill="#26313D">声音</text>
 
-    <!-- 10 必做 -->
-    <circle cx="1130" cy="150" r="14" fill="#C0452B"/>
-    <text x="1130" y="156" font-size="16" text-anchor="middle" fill="#FFFFFF">10</text>
-    <text x="1130" y="196" font-size="20" text-anchor="middle" fill="#26313D">修订</text>
+    <circle cx="1130" cy="165" r="16" fill="#C0452B" filter="url(#nc-node)"/>
+    <text x="1130" y="171" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">10</text>
+    <text x="1130" y="215" font-size="20" text-anchor="middle" fill="#26313D">修订</text>
 
-    <path d="M90 248H1130M90 240V256M1130 240V256" stroke="#E3DACB" stroke-width="2" fill="none"/>
-    <text x="610" y="236" font-size="18" text-anchor="middle" fill="#5C6875">每步只交付一个最小交付物</text>
+    <path d="M90 268H1130M90 260V276M1130 260V276" stroke="#E3DACB" stroke-width="2" fill="none"/>
+    <text x="610" y="256" font-size="18" text-anchor="middle" fill="#5C6875">每步只交付一个最小交付物</text>
 
-    <text x="90" y="282" font-size="18" fill="#8A94A0">references/ 12 个文件 · 按「症状 → 文件」加载 · 修订按 阻断级 → 结构级 → 语言级 → 风格级 排序</text>
+    <text x="90" y="302" font-size="18" fill="#8A94A0">references/ 12 个文件 · 按「症状 → 文件」加载 · 修订按 阻断级 → 结构级 → 语言级 → 风格级 排序</text>
 
   </g>
 </svg>
