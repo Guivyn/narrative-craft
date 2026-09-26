@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" role="img" aria-labelledby="nc-flow-title nc-flow-desc">
+  <title id="nc-flow-title">叙事工坊工作流 0–10 步</title>
+  <desc id="nc-flow-desc">横向流程轴展示 0 到 10 步：取向校准、前提、一句话、结构、人物、关系、大纲、场景、反俗套、声音、修订。实心朱砂节点为必做步骤，空心靛青节点为扩展步骤。下方标注每步只交付一个最小交付物，以及 references 按症状加载、修订按阻断级到风格级排序。</desc>
+
+  <rect x="0" y="0" width="1200" height="300" rx="18" fill="#0E141B"/>
+  <path d="M120 18V282M300 18V282M480 18V282M660 18V282M840 18V282M1020 18V282" stroke="#151F2B" stroke-width="1"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+
+    <text x="64" y="64" font-size="24" fill="#EDE7DA">工作流 · 0–10 步</text>
+
+    <circle cx="948" cy="56" r="7" fill="#C8553D"/>
+    <text x="964" y="63" font-size="18" fill="#7A8798">必做</text>
+    <circle cx="1052" cy="56" r="7" fill="none" stroke="#4A7C9B" stroke-width="2"/>
+    <text x="1068" y="63" font-size="18" fill="#7A8798">扩展</text>
+
+    <path d="M90 150H1130" stroke="#23303E" stroke-width="2"/>
+
+    <!-- 0 扩展 -->
+    <circle cx="90" cy="150" r="14" fill="#0E141B" stroke="#4A7C9B" stroke-width="2"/>
+    <text x="90" y="156" font-size="16" text-anchor="middle" fill="#8FB4CE">0</text>
+    <text x="90" y="196" font-size="20" text-anchor="middle" fill="#7A8798">取向</text>
+
+    <!-- 1 必做 -->
+    <circle cx="194" cy="150" r="14" fill="#C8553D"/>
+    <text x="194" y="156" font-size="16" text-anchor="middle" fill="#0E141B">1</text>
+    <text x="194" y="196" font-size="20" text-anchor="middle" fill="#C9D2DC">前提</text>
+
+    <!-- 2 必做 -->
+    <circle cx="298" cy="150" r="14" fill="#C8553D"/>
+    <text x="298" y="156" font-size="16" text-anchor="middle" fill="#0E141B">2</text>
+    <text x="298" y="196" font-size="20" text-anchor="middle" fill="#C9D2DC">一句话</text>
+
+    <!-- 3 必做 -->
+    <circle cx="402" cy="150" r="14" fill="#C8553D"/>
+    <text x="402" y="156" font-size="16" text-anchor="middle" fill="#0E141B">3</text>
+    <text x="402" y="196" font-size="20" text-anchor="middle" fill="#C9D2DC">结构</text>
+
+    <!-- 4 必做 -->
+    <circle cx="506" cy="150" r="14" fill="#C8553D"/>
+    <text x="506" y="156" font-size="16" text-anchor="middle" fill="#0E141B">4</text>
+    <text x="506" y="196" font-size="20" text-anchor="middle" fill="#C9D2DC">人物</text>
+
+    <!-- 5 扩展 -->
+    <circle cx="610" cy="150" r="14" fill="#0E141B" stroke="#4A7C9B" stroke-width="2"/>
+    <text x="610" y="156" font-size="16" text-anchor="middle" fill="#8FB4CE">5</text>
+    <text x="610" y="196" font-size="20" text-anchor="middle" fill="#7A8798">关系</text>
+
+    <!-- 6 必做 -->
+    <circle cx="714" cy="150" r="14" fill="#C8553D"/>
+    <text x="714" y="156" font-size="16" text-anchor="middle" fill="#0E141B">6</text>
+    <text x="714" y="196" font-size="20" text-anchor="middle" fill="#C9D2DC">大纲</text>
+
+    <!-- 7 必做 -->
+    <circle cx="818" cy="150" r="14" fill="#C8553D"/>
+    <text x="818" y="156" font-size="16" text-anchor="middle" fill="#0E141B">7</text>
+    <text x="818" y="196" font-size="20" text-anchor="middle" fill="#C9D2DC">场景</text>
+
+    <!-- 8 扩展 -->
+    <circle cx="922" cy="150" r="14" fill="#0E141B" stroke="#4A7C9B" stroke-width="2"/>
+    <text x="922" y="156" font-size="16" text-anchor="middle" fill="#8FB4CE">8</text>
+    <text x="922" y="196" font-size="20" text-anchor="middle" fill="#7A8798">反俗套</text>
+
+    <!-- 9 必做 -->
+    <circle cx="1026" cy="150" r="14" fill="#C8553D"/>
+    <text x="1026" y="156" font-size="16" text-anchor="middle" fill="#0E141B">9</text>
+    <text x="1026" y="196" font-size="20" text-anchor="middle" fill="#C9D2DC">声音</text>
+
+    <!-- 10 必做 -->
+    <circle cx="1130" cy="150" r="14" fill="#C8553D"/>
+    <text x="1130" y="156" font-size="16" text-anchor="middle" fill="#0E141B">10</text>
+    <text x="1130" y="196" font-size="20" text-anchor="middle" fill="#C9D2DC">修订</text>
+
+    <path d="M90 248H1130M90 240V256M1130 240V256" stroke="#23303E" stroke-width="2" fill="none"/>
+    <text x="610" y="236" font-size="18" text-anchor="middle" fill="#8FA0B0">每步只交付一个最小交付物</text>
+
+    <text x="90" y="282" font-size="18" fill="#5F6B79">references/ 12 个文件 · 按「症状 → 文件」加载 · 修订按 阻断级 → 结构级 → 语言级 → 风格级 排序</text>
+
+  </g>
+</svg>
